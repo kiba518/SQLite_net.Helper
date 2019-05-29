@@ -10,7 +10,7 @@ namespace SQLite_net.Helper
 {
     public class SQLiteHelper
     {
-        public string connstr = Path.Combine(Environment.CurrentDirectory, "User.db");
+        public string connstr = Path.Combine(Environment.CurrentDirectory, "User.db");//没有数据库会创建数据库
         public SQLiteConnection db;
         public SQLiteHelper()
         {
