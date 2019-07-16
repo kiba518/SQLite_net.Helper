@@ -15,7 +15,7 @@ namespace SQLite_net.Helper
         public SQLiteHelper()
         {
             db = new SQLiteConnection(connstr);
-            db.CreateTable<Stock>();
+            db.CreateTable<Stock>();//表已存在不会重复创建
             db.CreateTable<Valuation>();
         }
 
